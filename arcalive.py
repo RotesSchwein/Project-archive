@@ -5,27 +5,40 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from dateutil.relativedelta import relativedelta
 
+base_url = 'https://arca.live'
 url = 'https://arca.live/b/gaijin'
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
 }
 
-response = requests.get(url = url, headers = headers)
+current_date = datetime.datetime.now()
 
-soup = BeautifulSoup(response.text, "html.parser")
-
-"""print(response.text)"""
-
-print(soup.text)
-
-page = 1
-
-for _page in range(1, 5):
-    _url = url + "?p=" + str(_page)
+for _page in range(3):
+    _url = url + '?p=' + str(_page)
     _response = requests.get(url = _url, headers = headers)
-    _soup = BeautifulSoup(_response.text, "html.parser")
-    print(_soup.text)
+    _soup = BeautifulSoup(_response.text, 'html.parser')
 
+    selected_date = current_date + relativedelta(days = -1)
+
+    for tag in _soup.select('span.vcol.col-title > span.title'):
+        _title = tag.text
+        print(_title)
+
+    for href in _soup.select('a.vrow.column'):
+        _url = href.attrs.get('href')
+
+        if _url is None:
+            continue
+        else:
+            print(f'{base_url + _url}')
+
+    i = 0
+    for _el in _soup.select('span.vcol.col-time'):
+        if i == 0:
+            i += 1
+            continue
+        _time_el = _el.select("time")
+        print(_time_el[0]["datetime"])
 
 """boards = []
 page = 1
@@ -69,4 +82,3 @@ json_date = json.dumps(data)
 
 with open("./past_date_boards.json", "w") as f:
     f.write(json_date)"""
-

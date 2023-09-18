@@ -42,7 +42,7 @@ while loop:
     past_date = current_date + relativedelta(minutes = -30)
 
     for post in posts:
-        post_title = post.select_one(".title").text
+        post_title = soup.select_one("span.title").text
         post_url = url + post.select_one("a").attrs.get("href")
         post_date = datetime.datetime.strptime(post.select_one(".date").text, "%Y. %m. %d.")
 
