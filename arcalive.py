@@ -12,21 +12,34 @@ headers = {
 
 response = requests.get(url = url, headers = headers)
 
-soup = BeautifulSoup(response.text, "lxml")
+soup = BeautifulSoup(response.text, "html.parser")
 
-boards = []
+"""print(response.text)"""
+
+print(soup.text)
+
+page = 1
+
+for _page in range(1, 5):
+    _url = url + "?p=" + str(_page)
+    _response = requests.get(url = _url, headers = headers)
+    _soup = BeautifulSoup(_response.text, "html.parser")
+    print(_soup.text)
+
+
+"""boards = []
 page = 1
 loop = True
+current_date = datetime.datetime.now()
 
 while loop:
     _url = url + "?p=" + str(page)
     # print(_url)
     res = requests.get(url = _url, headers = headers)
-    soup = BeautifulSoup(res.text, 'lxml')
+    soup = BeautifulSoup(res.text, 'html.parser')
 
     posts = soup.select(".list-table table")
-    current_date = datetime.datetime.now()
-    past_date = current_date + relativedelta(days = -1)
+    past_date = current_date + relativedelta(minutes = -30)
 
     for post in posts:
         post_title = post.select_one(".title").text
@@ -55,14 +68,5 @@ data = {
 json_date = json.dumps(data)
 
 with open("./past_date_boards.json", "w") as f:
-    f.write(json_date)
+    f.write(json_date)"""
 
-"""titles = soup.select('span.title')
-
-for i in titles:
-    title = i.get_text()
-    print(title)
-
-driver = webdriver.Chrome()
-driver.get('https://arca.live/b/gaijin?p=1')
-"""
