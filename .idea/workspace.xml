@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af20a74-1b9a-480f-b135-56b78462e9bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gaijin_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arcalive.py" beforeDir="false" afterPath="$PROJECT_DIR$/arcalive.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,7 @@
       <workItem from="1695007009628" duration="7000" />
       <workItem from="1695007037446" duration="26000" />
       <workItem from="1695008893255" duration="11359000" />
-      <workItem from="1695086730325" duration="16748000" />
+      <workItem from="1695086730325" duration="17504000" />
     </task>
     <servers />
   </component>
