@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af20a74-1b9a-480f-b135-56b78462e9bb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gaijin_info.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arcalive.py" beforeDir="false" afterPath="$PROJECT_DIR$/arcalive.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arcalive_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/arcalive_example.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,8 @@
       <workItem from="1694740514880" duration="1141000" />
       <workItem from="1695007009628" duration="7000" />
       <workItem from="1695007037446" duration="26000" />
-      <workItem from="1695008893255" duration="10765000" />
+      <workItem from="1695008893255" duration="11359000" />
+      <workItem from="1695086730325" duration="16748000" />
     </task>
     <servers />
   </component>
@@ -97,27 +98,20 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arcalive.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/scrapper.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arcalive.py</url>
-          <line>46</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arcalive.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="13" />
+          <url>file://$PROJECT_DIR$/scrapper.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="_soup.select('span.vcol.col-time')[1].select(&quot;time&quot;)" language="Python" />
-        <watch expression="_soup.select('span.vcol.col-time')[1].select(&quot;time&quot;)[0][&quot;datetime&quot;]" language="Python" />
-        <watch expression="_el.select(&quot;time&quot;)" language="Python" />
+        <watch expression="'url': base_url + info.attrs.get('href') " language="Python" />
       </configuration>
     </watches-manager>
   </component>
@@ -127,7 +121,8 @@
     <SUITE FILE_PATH="coverage/Crawling$arcalive_example.coverage" NAME="arcalive_example Coverage Results" MODIFIED="1695004269045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Crawling$base.coverage" NAME="base Coverage Results" MODIFIED="1693373350035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/getpage_py$getpage.coverage" NAME="getpage Coverage Results" MODIFIED="1694082734571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/getpage_py$arcalive.coverage" NAME="arcalive Coverage Results" MODIFIED="1695023442803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/getpage_py$arcalive.coverage" NAME="arcalive Coverage Results" MODIFIED="1695090811029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/getpage_py$scrapper.coverage" NAME="scrapper Coverage Results" MODIFIED="1695108131115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/getpage_py$python_web_crawler.coverage" NAME="python_web_crawler Coverage Results" MODIFIED="1694070831701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
