@@ -45,5 +45,5 @@ def temp():
 
 
 
-# print(get_page_info())
-temp()
+print(get_page_info())
+# temp()
