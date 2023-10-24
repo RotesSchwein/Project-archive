@@ -3,14 +3,35 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\gaijin_channel_info.csv">
+        <entry key="\gaijin_channel_2023-10-12_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\gaijin_info.csv">
+        <entry key="\gaijin_channel_2023-10-13_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\gaijin_channel_2023-10-14_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\gaijin_channel_2023-10-17_info.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\gaijin_channel_2023-10-18_info.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
