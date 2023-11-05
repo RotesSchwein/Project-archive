@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6af20a74-1b9a-480f-b135-56b78462e9bb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gaijin_channel_2023-10-12_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gaijin_channel_2023-10-13_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gaijin_channel_2023-10-14_info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gaijin_channel_2023-10-17_info.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/csv-editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraper-DB.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/csv-editor.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaijin_channel_info.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gaijin_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaijin_channel_2023-10-12_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaijin_channel_2023-10-13_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaijin_channel_2023-10-14_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaijin_channel_2023-10-17_info.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaijin_channel_2023-10-18_info.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium_browser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/selenium_scrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/selenium_scrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapper.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +58,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;temp&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/PyCharm/Crawling/scrapper.py&quot;,
@@ -68,6 +68,11 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.CSV/TSV/PSV&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RunManager" selected="Python.main">
@@ -115,7 +120,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="scrapper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="scraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Crawling" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -128,7 +133,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scrapper.py" />
+      <option name="SCRIPT_NAME" value="D:\PyCharm\Crawling\scraper.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,10 +167,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.scrapper" />
         <item itemvalue="Python.selenium_scrapper" />
+        <item itemvalue="Python.scraper" />
         <item itemvalue="Python.mysql_query" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +213,12 @@
       <workItem from="1697685812363" duration="2416000" />
       <workItem from="1697765732587" duration="3313000" />
       <workItem from="1697769671915" duration="1017000" />
-      <workItem from="1698125904717" duration="324000" />
+      <workItem from="1698125904717" duration="1727000" />
+      <workItem from="1698210556351" duration="7647000" />
+      <workItem from="1698634733752" duration="13145000" />
+      <workItem from="1698715751095" duration="16603000" />
+      <workItem from="1698738376839" duration="345000" />
+      <workItem from="1698802052061" duration="16210000" />
     </task>
     <servers />
   </component>
@@ -290,32 +299,30 @@
           <line>76</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapper.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapper.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapper.py</url>
-          <line>58</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/scrapper.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="current_page" language="Python" />
+        <watch expression="driver.get(f'https://arca.live/b/gaijin?near={time_period}T00%3A00&amp;tz=%2B0900')" language="Python" />
+        <watch expression="link = (str)('https://arca.live' + _soup.find('li', {'class': 'page-item active'}).find('a', {'class': 'page-link'}).attrs.get('href'))" language="Python" />
+        <watch expression="_soup.find('li', {'class': 'page-item active'})" language="Python" />
+        <watch expression="_soup.find('li', {'class': 'page-item active'})" language="Python" />
+        <watch expression="info.find('span', {'class': 'vcol col-id'})" language="Python" />
+        <watch expression="info_list" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/getpage_py$mysql_query.coverage" NAME="mysql_query Coverage Results" MODIFIED="1696923087482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/getpage_py$main.coverage" NAME="main Coverage Results" MODIFIED="1698125910473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/getpage_py$main.coverage" NAME="main Coverage Results" MODIFIED="1698825257521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Crawling$arcalive.coverage" NAME="arcalive Coverage Results" MODIFIED="1695004149666" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/getpage_py$basecrawl.coverage" NAME="basecrawl Coverage Results" MODIFIED="1694083078394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Temp/BNZ.64f9a77d4f0dbe6d" />
     <SUITE FILE_PATH="coverage/Crawling$arcalive_example.coverage" NAME="arcalive_example Coverage Results" MODIFIED="1695004269045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
